@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <link rel="stylesheet" href ="holyGrail.css">
+</head>
+<body>
+    
+    <header><p>This header is in the default position on the webpage, which means it is static because it is the first thing on the page and doesn't need to be moved. If it were to be positioned absolutely, it would likely still be in the same position for the most part, since there is no parent position before it. It might move a little bit according to the offsets.</p></header>
+
+    <nav><p>The nav bar is according to the offsets. It's position being fixed just means that it stays in the same position on the screen even as you continue throughout the webpage. It is then moved down 170 pixels with the top position so that it is not overlapping with the header and left 35 pixels. If it were to be positioned relative to the page, it would be 170 pixels down the page.</p></nav>
+
+    <div>
+
+        <div class="articles">
+
+            <article><p>This article is positioned relative to the webpage, meaning it is positioned how it would be in its normal position just with one offset. I used offsets of top positioning to move it 15 pixels below the nav object.</p></article>
+
+            <article><p>This article uses the same relative positioning as the first article but since it is relative they are positioned directly below each other. If it were to be absolute the two articles would be on top of each other.</p></article>
+
+        </div>
+
+    <aside><p>The aside is positioned absolutely to the article. I used offsets of left to move it 50% to the right and brought it down 235 pixels. If it were to be positioned relative to the webpage, it would be 235 pixels further down the page. </p></aside>
+
+    </div>
+
+    <footer>The footer positioning is fixed to the bottom of the page because I used the offset bottom and placed it at 0 pixels. If the footer were to not be fixed and instead be absolutely positioned, it would instead be on top of the aside object.</footer>
+</body>
+</html>
